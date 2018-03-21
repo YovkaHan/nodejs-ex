@@ -94,7 +94,7 @@ app.get('/pagecount', function (req, res) {
 });
 
 setInterval(function() {
-    http.get(APP_TO_GET);
+    http.get(process.env.APP_TO_GET);
 }, 600000); // every 10 minutes (300000)
 
 // error handling
